@@ -1,0 +1,6 @@
+<label>TExt</label>
+<input type="text" class="form-control" (input)="onInsert($event)">
+<p>{{ name }}</p>
+<p>server works!</p>
+<button class="btn btn-primary" [disabled]='!allow' (click)="onCountInc()"> Count Increase</button>
+<p *ngIf="countshow">Count: {{ count }}</p>
